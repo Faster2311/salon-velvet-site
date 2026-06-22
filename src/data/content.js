@@ -2,11 +2,11 @@
 
 export const photos = (base) => ({
   hero: { src: base + 'hero.jpg', alt: 'Світлий салонний простір з природним деревом і м\'яким освітленням' },
-  svcHair:  { src: base + 'svc-hair.jpg',  alt: 'Майстер підрівнює кінчики волосся ножицями — точна стрижка' },
+  svcHair:  { src: base + 'svc-hair-v2.jpg',  alt: 'Майстер підрівнює довге темне волосся клієнтки ножицями та гребінцем' },
   svcColor: { src: base + 'svc-color.jpg', alt: 'Стилістка створює локони на довгому мелірованому волоссі' },
   svcNails: { src: base + 'svc-nails.jpg', alt: 'Майстриня у рожевих рукавичках наносить лак клієнтці' },
-  svcBrows: { src: base + 'svc-brows.jpg', alt: 'Точна робота майстра під час процедури для вій та брів' },
-  svcPedi:  { src: base + 'svc-pedi.jpg',  alt: 'Педикюр зі свіжим лаком — ніжки у воді з квітами' },
+  svcBrows: { src: base + 'svc-brows-v2.jpg', alt: 'Точна робота майстра під час процедури для вій та брів' },
+  svcPedi:  { src: base + 'svc-pedi-v2.jpg',  alt: 'Педикюр зі свіжим лаком — ніжки у воді з квітами' },
   pHair1:   { src: base + 'p-hair1.jpg',   alt: 'Голлівудські хвилі для вечірнього виходу' },
   pNails1:  { src: base + 'p-nails1.jpg',  alt: 'Геометричний дизайн нігтів у пастельних тонах' },
   pNails2:  { src: base + 'p-nails2.jpg',  alt: 'Класичний манікюр з насиченим покриттям' },
