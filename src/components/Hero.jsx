@@ -32,9 +32,9 @@ export default function Hero() {
         <div className="lg:col-span-6 relative z-10">
           <span data-h="eyebrow" className="eyebrow">Салон краси · Вінниця, Соборна 38</span>
 
-          <h1 data-h="title" className="h-display mt-6 text-[42px] sm:text-6xl lg:text-[80px]">
+          <h1 data-h="title" className="h-display mt-6 text-[34px] sm:text-6xl lg:text-[80px] break-words">
             <span className="line block">Догляд, після якого</span>
-            <span className="line block">хочеться <span className="script text-rose-600 text-7xl sm:text-8xl lg:text-9xl leading-none">сфотографуватись</span></span>
+            <span className="line block">хочеться <span className="script text-rose-600 text-4xl sm:text-7xl lg:text-9xl leading-none">сфотографуватись</span></span>
             <span className="line block">— у центрі Вінниці</span>
           </h1>
 
