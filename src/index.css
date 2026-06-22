@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root { color-scheme: light; }
+  html { scroll-behavior: smooth; scroll-padding-top: 88px; }
+  html, body, #root { min-height: 100%; background: #f6f4f4; }
+  body {
+    font-family: 'Lato', system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    color: #1a1620;
+    background-image:
+      radial-gradient(900px 600px at 90% -10%, rgba(168,69,107,0.07), transparent 60%),
+      radial-gradient(700px 500px at 0% 100%, rgba(212,165,116,0.10), transparent 60%);
+    background-attachment: fixed;
+  }
+  ::selection { background: #a8456b; color: #fff; }
+  button, a[role="button"], .tap { min-height: 44px; }
+}
+
+@layer components {
+  .container-x { @apply mx-auto w-full max-w-7xl px-5 sm:px-8 lg:px-12; }
+
+  .h-display {
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
+    letter-spacing: -0.015em;
+    line-height: 1.05;
+  }
+  .script { font-family: 'Sacramento', cursive; font-weight: 400; }
+
+  .eyebrow {
+    @apply inline-flex items-center gap-3 text-[11px] sm:text-xs uppercase text-rose-600;
+    letter-spacing: 0.22em;
+  }
+  .eyebrow::before {
+    content: "";
+    width: 28px; height: 1px;
+    background: linear-gradient(90deg, transparent, #a8456b, transparent);
+  }
+
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 px-6 py-3.5 text-sm font-medium tracking-wider uppercase transition-all duration-300 rounded-full select-none;
+  }
+  .btn-rose {
+    @apply btn text-white;
+    background: linear-gradient(135deg, #a8456b 0%, #8e3458 100%);
+    box-shadow: 0 12px 24px -12px rgba(168, 69, 107, 0.45);
+  }
+  .btn-rose:hover { transform: translateY(-1px); box-shadow: 0 16px 30px -12px rgba(168, 69, 107, 0.55); }
+
+  .btn-ghost {
+    @apply btn border border-rose-500/40 text-rose-600 hover:bg-rose-500/5 hover:border-rose-500;
+  }
+
+  .card {
+    @apply rounded-2xl border border-line bg-paper;
+    box-shadow: 0 8px 24px -16px rgba(78, 38, 56, 0.12);
+  }
+  .card-hover { @apply transition-all duration-500 hover:border-rose-500/40 hover:shadow-soft hover:-translate-y-1; }
+
+  .divider-rose {
+    background: linear-gradient(90deg, transparent, rgba(168,69,107,0.4), transparent);
+    height: 1px;
+  }
+
+  .input {
+    @apply w-full bg-cream border border-line2 rounded-xl px-4 py-3 text-ink placeholder:text-mute focus:outline-none focus:border-rose-500 focus:ring-4 focus:ring-rose-500/10 transition;
+  }
+
+  .price-tag {
+    @apply font-display text-2xl text-rose-600;
+  }
+
+  .chip {
+    @apply inline-flex items-center px-3 py-1 rounded-full bg-rose-50 text-rose-700 text-xs font-semibold uppercase tracking-wider2 border border-rose-100;
+  }
+}
+
+.reveal-up { opacity: 0; transform: translateY(28px); will-change: transform, opacity; }
+.reveal-fade { opacity: 0; will-change: opacity; }
