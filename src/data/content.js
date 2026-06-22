@@ -2,7 +2,7 @@
 
 export const photos = (base) => ({
   hero: { src: base + 'hero.jpg', alt: 'Світлий салонний простір з природним деревом і м\'яким освітленням' },
-  svcHair:  { src: base + 'svc-hair.jpg',  alt: 'Перукарка укладає клієнтці волосся у теплому світлі салону' },
+  svcHair:  { src: base + 'svc-hair.jpg',  alt: 'Майстер підрівнює кінчики волосся ножицями — точна стрижка' },
   svcColor: { src: base + 'svc-color.jpg', alt: 'Стилістка створює локони на довгому мелірованому волоссі' },
   svcNails: { src: base + 'svc-nails.jpg', alt: 'Майстриня у рожевих рукавичках наносить лак клієнтці' },
   svcBrows: { src: base + 'svc-brows.jpg', alt: 'Точна робота майстра під час процедури для вій та брів' },
@@ -109,13 +109,13 @@ export const howItWorks = [
 export const portfolio = [
   { id: 'p1', cat: 'hair',   photo: 'svcColor', caption: 'Тонування у попелясто-рожевий — теплий світлий блонд для весни' },
   { id: 'p2', cat: 'hair',   photo: 'pHair1',   caption: 'Голлівудські хвилі для корпоративу — тримає всю ніч' },
-  { id: 'p3', cat: 'hair',   photo: 'svcHair',  caption: 'Жіноча стрижка-каре з м\'якою укладкою' },
+  { id: 'p3', cat: 'hair',   photo: 'svcHair',  caption: 'Точна стрижка кінчиків — акуратна форма без посічень' },
   { id: 'p4', cat: 'nails',  photo: 'pNails1',  caption: 'Манікюр з мінімалістичним дизайном — геометрія у пастельних тонах' },
   { id: 'p5', cat: 'nails',  photo: 'pNails2',  caption: 'Манікюр з насиченим винним покриттям — тримає 4 тижні' },
   { id: 'p6', cat: 'nails',  photo: 'pNails3',  caption: 'Дизайн з перламутровим лаком на коротких' },
   { id: 'p7', cat: 'nails',  photo: 'svcNails', caption: 'Класичний манікюр з ніжним рожевим покриттям' },
   { id: 'p8', cat: 'face',   photo: 'pMakeup1', caption: 'Вечірній макіяж з акцентом на губах' },
-  { id: 'p9', cat: 'face',   photo: 'svcBrows', caption: 'Архітектура брів з фарбуванням хною' },
+  { id: 'p9', cat: 'face',   photo: 'svcBrows', caption: 'Точна робота пінцетом — акуратне нарощення вій' },
 ];
 
 export const portfolioFilters = [
